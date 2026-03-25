@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Salon AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>SmartSalon AI-Personalized Beauty Recommendation</h2>
+
+    <form method="POST">
+        Age:
+        <input name="age" required>
+
+        Gender:
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        Skin Type:
+        <select name="skin">
+            <option>Oily</option>
+            <option>Dry</option>
+            <option>Normal</option>
+        </select>
+
+        Hair Type:
+        <select name="hair">
+            <option>Straight</option>
+            <option>Curl</option>
+        </select>
+
+        Occasion:
+        <select name="occasion">
+            <option>Party</option>
+            <option>Wedding</option>
+            <option>Interview</option>
+            <option>Regular</option>
+        </select>
+
+        Budget:
+        <input name="budget" required>
+
+        <button type="submit">Get Recommendation</button>
+    </form>
+</div>
+
+</body>
+</html>
